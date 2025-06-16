@@ -21,9 +21,9 @@ Method 2 (Using your device)
 
 1. clone the repo
     ```bash
-git clone https://github.com/Duck1405/better-status-page.git
-cd better-status-page
-```
+    git clone https://github.com/Duck1405/better-status-page.git
+    cd better-status-page
+    ```
 2. Install the dependences
     ```bash 
     npm install

@@ -1,6 +1,33 @@
 {
   "version": 3,
   "middleware": {},
-  "functions": {},
+  "functions": {
+    "/api/monitors/route": {
+      "files": [
+        "server/server-reference-manifest.js",
+        "server/app/api/monitors/route_client-reference-manifest.js",
+        "server/middleware-build-manifest.js",
+        "server/middleware-react-loadable-manifest.js",
+        "server/next-font-manifest.js",
+        "server/interception-route-rewrite-manifest.js",
+        "server/edge-runtime-webpack.js",
+        "server/app/api/monitors/route.js"
+      ],
+      "name": "app/api/monitors/route",
+      "page": "/api/monitors/route",
+      "matchers": [
+        {
+          "regexp": "^/api/monitors$",
+          "originalSource": "/api/monitors"
+        }
+      ],
+      "wasm": [],
+      "assets": [],
+      "env": {
+        "__NEXT_BUILD_ID": "development",
+        "NEXT_SERVER_ACTIONS_ENCRYPTION_KEY": "YcgLzE4+yO/LUUzRgWTj6xCRIdRWzu4tq4HQTLqFbJI="
+      }
+    }
+  },
   "sortedMiddleware": []
 }

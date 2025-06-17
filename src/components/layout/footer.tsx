@@ -19,12 +19,12 @@ export function Footer() {
               </a>
               <span>and</span>
               <a 
-                href="https://github.com/Waffle-Host/better-hetrix-status" 
+                href="https://github.com/Duck1405/better-status-page" 
                 target="_blank" 
                 rel="noopener noreferrer" 
                 className="transition-colors duration-200 hover:text-amber-500 inline-flex items-center gap-1"
               >
-                Better-Hetrix-Page
+                Better Status Page
                 <svg className="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
                 </svg>
@@ -33,24 +33,24 @@ export function Footer() {
             <div className="flex flex-wrap items-center justify-center sm:justify-start gap-x-1">
               <span>Custom Made for</span>
               <a 
-                href="https://waffle.host" 
+                href="https://hackatime.hackclub.com/" 
                 target="_blank" 
                 rel="noopener noreferrer" 
                 className="transition-colors duration-200 hover:text-amber-500 inline-flex items-center gap-1"
               >
-                Waffle.host
+              Hackclub
                 <svg className="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
                 </svg>
               </a>
               <span>by</span>
               <a 
-                href="https://irazz.lol" 
+                href="https://github.com/Duck1405" 
                 target="_blank" 
                 rel="noopener noreferrer" 
                 className="transition-colors duration-200 hover:text-amber-500 inline-flex items-center gap-1"
               >
-                irazz.lol
+                Duck1405
                 <svg className="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
                 </svg>
@@ -58,7 +58,7 @@ export function Footer() {
             </div>
           </div>
           <div className="text-muted-foreground">
-            &copy; {new Date().getFullYear()}
+            &copy; {new Date().getFullYear()} Hackclub Project
           </div>
         </div>
       </div>

@@ -7,7 +7,7 @@ import { env } from '@/utils/env'
 const inter = Inter({ subsets: ['latin'] })
 
 export const metadata = {
-  title: 'Status Page',
+  title: 'WEB_NAME',
   description: 'Monitor your service uptime and incidents',
 }
 

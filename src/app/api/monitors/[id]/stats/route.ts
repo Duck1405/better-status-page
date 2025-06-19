@@ -22,8 +22,8 @@ export async function GET(
         const params = await context.params;
         const { id } = params;
 
-        if (!process.env.HETRIX_API_TOKEN) {
-            debug('HETRIX_API_TOKEN environment variable is not configured');
+        if (!process.env.HETRIX_API) {
+            debug('HETRIX_API environment variable is not configured');
             return NextResponse.json(
                 { error: 'HetrixTools API token is not configured' },
                 { status: 500 }
@@ -31,7 +31,7 @@ export async function GET(
         }
 
         debug('Fetching stats for monitor ID:', id);
-        const response = await fetch(`https://api.hetrixtools.com/v1/${process.env.HETRIX_API_TOKEN}/server/stats/${id}/`);
+        const response = await fetch(`https://api.hetrixtools.com/v1/${process.env.HETRIX}/server/stats/${id}/`);
         const data = await response.json();
 
         // Log raw response in development only

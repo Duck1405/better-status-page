@@ -8,12 +8,12 @@ export const revalidate = 30;
 
 export async function GET() {
     try {
-        if (!process.env.HETRIX_API_TOKEN) {
-            console.error('HETRIX_API_TOKEN environment variable is not configured');
+        if (!process.env.HETRIX_API) {
+            console.error('HETRIX_API environment variable is not configured');
             return NextResponse.json(
                 { 
                     monitors: [],
-                    error: 'HetrixTools API token is not configured. Please set the HETRIX_API_TOKEN environment variable in your Cloudflare Pages settings.'
+                    error: 'HetrixTools API token is not configured. Please set the HETRIX_API environment variable in your Cloudflare Pages settings.'
                 },
                 { 
                     status: 500,

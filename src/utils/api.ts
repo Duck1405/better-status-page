@@ -1,6 +1,6 @@
 import {  RawHetrixMonitor, ServerStats } from '../types/hetrix';
 import { Monitor } from '../types/monitor';
-const HETRIX_API_TOKEN = process.env.HETRIX_API_TOKEN;
+const HETRIX_API = process.env.HETRIX_API;
 const HETRIX_API_URL = 'https://api.hetrixtools.com/v3';
 
 // In-memory cache for monitors data
@@ -65,14 +65,14 @@ export async function fetchMonitors(): Promise<{ monitors: Monitor[] }> {
 
     return queueRequest('monitors', async () => {
         try {
-            if (!HETRIX_API_TOKEN) {
-                throw new Error('HETRIX_API_TOKEN environment variable is not configured');
+            if (!HETRIX_API) {
+                throw new Error('HETRIX_API environment variable is not configured');
             }
 
             console.log('Fetching monitors from HetrixTools API...');
             const response = await fetch(`${HETRIX_API_URL}/uptime-monitors`, {
                 headers: {
-                    'Authorization': `Bearer ${HETRIX_API_TOKEN}`
+                    'Authorization': `Bearer ${HETRIX_API}`
                 },
                 method: 'GET',
                 cache: 'no-store'
@@ -178,8 +178,8 @@ export async function fetchServerStats(monitorId: string): Promise<ServerStats> 
     }
 
     try {
-        if (!HETRIX_API_TOKEN) {
-            throw new Error('HETRIX_API_TOKEN environment variable is not configured');
+        if (!HETRIX_API) {
+            throw new Error('HETRIX_API environment variable is not configured');
         }
 
         // If we're rate limited but have stale cache, use it
@@ -191,7 +191,7 @@ export async function fetchServerStats(monitorId: string): Promise<ServerStats> 
         console.log(`Fetching server stats for monitor ${monitorId} from HetrixTools API...`);
         const response = await fetch(`${HETRIX_API_URL}/server-monitor/${monitorId}/stats`, {
             headers: {
-                'Authorization': `Bearer ${HETRIX_API_TOKEN}`
+                'Authorization': `Bearer ${HETRIX_API}`
             },
             method: 'GET',
             cache: 'no-store'

@@ -13,7 +13,7 @@ const getEnvValue = (key: string) => {
 }
 
 export const env = {
-  hetrixApiToken: getEnvValue('HETRIX_API_TOKEN'),
+  hetrixApiToken: getEnvValue('HETRIX_API'),
   showSystemStats: parseEnvBool(getEnvValue('NEXT_PUBLIC_SHOW_SYSTEM_STATS'), true),
   showCpuStats: parseEnvBool(getEnvValue('NEXT_PUBLIC_SHOW_CPU_STATS'), true),
   showRamStats: parseEnvBool(getEnvValue('NEXT_PUBLIC_SHOW_RAM_STATS'), true),

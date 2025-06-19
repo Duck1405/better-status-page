@@ -2,6 +2,8 @@
 
 A modern looking webpage to show your amazing status page. Built using the Hetrix tools API. This project changes the good old Hetrix monitoring data into a user-friendly status dash. 
 
+Do note AI was used to enhance the code to make it shorter and have a lil better features. AI was also used for some brainstorming and debugging some errors and features.
+
 ## Demo
 Coming soon
 

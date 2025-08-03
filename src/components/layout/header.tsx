@@ -32,7 +32,7 @@ export const Header = memo(function Header() {
               />
             </MotionDiv>
             <span className="text-xl font-semibold tracking-tight">
-              Status Page
+              Slice Hosting
             </span>
           </a>
         </MotionDiv>

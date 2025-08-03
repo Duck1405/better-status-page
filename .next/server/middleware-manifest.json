@@ -2,6 +2,37 @@
   "version": 3,
   "middleware": {},
   "functions": {
+    "/api/monitors/[id]/stats/route": {
+      "files": [
+        "server/server-reference-manifest.js",
+        "server/app/api/monitors/[id]/stats/route_client-reference-manifest.js",
+        "server/middleware-build-manifest.js",
+        "server/middleware-react-loadable-manifest.js",
+        "server/next-font-manifest.js",
+        "server/interception-route-rewrite-manifest.js",
+        "server/edge-runtime-webpack.js",
+        "server/edge-chunks/747.js",
+        "server/edge-chunks/601.js",
+        "server/app/api/monitors/[id]/stats/route.js"
+      ],
+      "name": "app/api/monitors/[id]/stats/route",
+      "page": "/api/monitors/[id]/stats/route",
+      "matchers": [
+        {
+          "regexp": "^/api/monitors/(?<id>[^/]+?)/stats$",
+          "originalSource": "/api/monitors/[id]/stats"
+        }
+      ],
+      "wasm": [],
+      "assets": [],
+      "env": {
+        "__NEXT_BUILD_ID": "yXnuWkTvHfyPpT2hUqRfR",
+        "NEXT_SERVER_ACTIONS_ENCRYPTION_KEY": "tod5stWqAd6ApS0p9KSHJPEh6W+xl27Wc6Yi1+bnKHM=",
+        "__NEXT_PREVIEW_MODE_ID": "139eff7e6d7ad3ada9e758ec47819dfb",
+        "__NEXT_PREVIEW_MODE_ENCRYPTION_KEY": "f9917d88f6023b35c8279fcb12e379d034330f102a0bcea1336c366d595b2746",
+        "__NEXT_PREVIEW_MODE_SIGNING_KEY": "128f415eb4d8646027795322e108e0d273a513ddab23db5ad06a969f85d28b3e"
+      }
+    },
     "/api/monitors/route": {
       "files": [
         "server/server-reference-manifest.js",
@@ -11,6 +42,8 @@
         "server/next-font-manifest.js",
         "server/interception-route-rewrite-manifest.js",
         "server/edge-runtime-webpack.js",
+        "server/edge-chunks/747.js",
+        "server/edge-chunks/601.js",
         "server/app/api/monitors/route.js"
       ],
       "name": "app/api/monitors/route",
@@ -24,8 +57,41 @@
       "wasm": [],
       "assets": [],
       "env": {
-        "__NEXT_BUILD_ID": "development",
-        "NEXT_SERVER_ACTIONS_ENCRYPTION_KEY": "YcgLzE4+yO/LUUzRgWTj6xCRIdRWzu4tq4HQTLqFbJI="
+        "__NEXT_BUILD_ID": "yXnuWkTvHfyPpT2hUqRfR",
+        "NEXT_SERVER_ACTIONS_ENCRYPTION_KEY": "tod5stWqAd6ApS0p9KSHJPEh6W+xl27Wc6Yi1+bnKHM=",
+        "__NEXT_PREVIEW_MODE_ID": "139eff7e6d7ad3ada9e758ec47819dfb",
+        "__NEXT_PREVIEW_MODE_ENCRYPTION_KEY": "f9917d88f6023b35c8279fcb12e379d034330f102a0bcea1336c366d595b2746",
+        "__NEXT_PREVIEW_MODE_SIGNING_KEY": "128f415eb4d8646027795322e108e0d273a513ddab23db5ad06a969f85d28b3e"
+      }
+    },
+    "/api/refresh/route": {
+      "files": [
+        "server/server-reference-manifest.js",
+        "server/app/api/refresh/route_client-reference-manifest.js",
+        "server/middleware-build-manifest.js",
+        "server/middleware-react-loadable-manifest.js",
+        "server/next-font-manifest.js",
+        "server/interception-route-rewrite-manifest.js",
+        "server/edge-runtime-webpack.js",
+        "server/edge-chunks/747.js",
+        "server/app/api/refresh/route.js"
+      ],
+      "name": "app/api/refresh/route",
+      "page": "/api/refresh/route",
+      "matchers": [
+        {
+          "regexp": "^/api/refresh$",
+          "originalSource": "/api/refresh"
+        }
+      ],
+      "wasm": [],
+      "assets": [],
+      "env": {
+        "__NEXT_BUILD_ID": "yXnuWkTvHfyPpT2hUqRfR",
+        "NEXT_SERVER_ACTIONS_ENCRYPTION_KEY": "tod5stWqAd6ApS0p9KSHJPEh6W+xl27Wc6Yi1+bnKHM=",
+        "__NEXT_PREVIEW_MODE_ID": "139eff7e6d7ad3ada9e758ec47819dfb",
+        "__NEXT_PREVIEW_MODE_ENCRYPTION_KEY": "f9917d88f6023b35c8279fcb12e379d034330f102a0bcea1336c366d595b2746",
+        "__NEXT_PREVIEW_MODE_SIGNING_KEY": "128f415eb4d8646027795322e108e0d273a513ddab23db5ad06a969f85d28b3e"
       }
     }
   },
